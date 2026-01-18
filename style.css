@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: #ffffff;
+  color: #222;
+  text-align: center;
+}
+
+header {
+  padding: 2rem 1rem;
+}
+
+h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+p {
+  margin-top: 0;
+  color: #555;
+}
+
+.alphabet-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
+  gap: 0.75rem;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.alphabet-nav a {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #222;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.alphabet-nav a:hover {
+  background: #f2f2f2;
+  transform: translateY(-2px);
+}
+
+footer {
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.song-list {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.song-list li {
+  border-bottom: 1px solid #eee;
+}
+
+.song-list a {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: #222;
+}
+
+.song-list a:hover {
+  background: #f9f9f9;
+}
