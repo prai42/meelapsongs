@@ -1,5 +1,5 @@
 /* =========================
-   RESET & BASE STYLES
+   RESET & BASE
    ========================= */
 
 * {
@@ -27,7 +27,7 @@ header {
 
 header h1 {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 header p {
@@ -56,28 +56,36 @@ footer a:hover {
 }
 
 /* =========================
-   A–Z HOMEPAGE GRID
+   A–Z & SPECIAL TABS GRID
    ========================= */
 
 .alphabet-nav {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(44px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(72px, 1fr));
   gap: 0.75rem;
-  max-width: 640px;
+  max-width: 760px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
 
 .alphabet-nav a {
-  display: block;
-  padding: 0.75rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;                 /* same height for all tabs */
+  padding: 0.4rem;
   border: 1px solid #ddd;
-  border-radius: 6px;
+  border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
+  font-size: 0.9rem;            /* fits Nepali text */
+  line-height: 1.2;
+  text-align: center;
   color: #222;
   background-color: #fff;
   transition: background-color 0.2s ease, transform 0.15s ease;
+  white-space: normal;
+  word-break: break-word;
 }
 
 .alphabet-nav a:hover {
@@ -86,12 +94,12 @@ footer a:hover {
 }
 
 /* =========================
-   SONG LIST (A–Z PAGES)
+   SONG LIST (LETTER PAGES)
    ========================= */
 
 .song-list {
   list-style: none;
-  max-width: 640px;
+  max-width: 680px;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -102,7 +110,7 @@ footer a:hover {
 
 .song-list a {
   display: block;
-  padding: 0.9rem 0.5rem;
+  padding: 0.85rem 0.5rem;
   text-decoration: none;
   color: #222;
   font-size: 1rem;
@@ -126,18 +134,22 @@ footer a:hover {
 .lyrics-image {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
   background-color: #fff;
 }
 
 /* =========================
-   RESPONSIVE TWEAKS
+   RESPONSIVE ENHANCEMENTS
    ========================= */
 
 @media (min-width: 768px) {
   header h1 {
     font-size: 2.4rem;
+  }
+
+  .alphabet-nav a {
+    font-size: 0.95rem;
   }
 
   .song-list a {
